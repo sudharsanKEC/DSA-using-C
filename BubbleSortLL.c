@@ -41,8 +41,8 @@ void bubbleSort(Node **head){
 		return;
 	}
 	Node *temp1=NULL,*temp2=NULL;
-	for(temp1=*head;temp1!=NULL;temp1=temp1->next){
-		for(temp2=*head;temp2->next!=NULL;temp2=temp2->next){
+	for(temp1=*head;temp1->next!=NULL;temp1=temp1->next){
+		for(temp2=temp1;temp2!=NULL;temp2=temp2->next){
 			if(temp1->data>temp2->data){
 				int data=temp2->data;
 				temp2->data=temp1->data;
