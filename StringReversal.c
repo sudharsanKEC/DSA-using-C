@@ -11,7 +11,7 @@ void pop(){
 }
 int main(){
 	char str[25];
-	printf("Enter the character to be reversed:\n");
+	printf("Enter the string to be reversed:\n");
 	scanf("%s",str);
 	int i=0;
 	for(i=0;str[i]!='\0';i++){
